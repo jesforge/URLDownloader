@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="350" Height="180"
+        Background="#1e2124" TransparencyLevelHint="AcrylicBlur"
+        WindowStartupLocation="CenterScreen"
+        x:Class="URLDownloader.Views.MainWindow"
+        CanResize="False"
+        ShowInTaskbar="False"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="0"
+        Title="URL Downloader"
+        Margin="0,0,0,0"
+        >
+
+    <StackPanel Margin="20">
+        <TextBlock Text="Download-Format wählen:" FontSize="16" Foreground="White"/>
+        <TextBlock x:Name="UrlText" TextWrapping="Wrap" Foreground="LightGray" Margin="0,10,0,10"/>
+    
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <Button x:Name="Mp4Button" Content="🎞 MP4" Width="100"/>
+            <Button x:Name="Mp3Button" Content="🎵 MP3" Width="100"/>
+            <Button x:Name="CancelButton" Content="❌ Cancel" Width="100"></Button>
+        </StackPanel>
+        
+    </StackPanel>
+</Window>
