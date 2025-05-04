@@ -1,21 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
-        <Nullable>enable</Nullable>
-        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-        <ApplicationManifest>app.manifest</ApplicationManifest>
-        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-    </PropertyGroup>
+<PropertyGroup>
+  <OutputType>WinExe</OutputType>
+  <TargetFramework>net8.0</TargetFramework>
+  <UseWPF>false</UseWPF>
+  <UseWindowsForms>false</UseWindowsForms>
+</PropertyGroup>
 
-    <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
-        <PublishSingleFile>true</PublishSingleFile>
-        <SelfContained>true</SelfContained>
-        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    </PropertyGroup>
-    
     <ItemGroup>
         <PackageReference Include="Avalonia" Version="11.3.0"/>
         <PackageReference Include="Avalonia.Desktop" Version="11.3.0"/>

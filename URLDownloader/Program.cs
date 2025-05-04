@@ -11,7 +11,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        BuildAvaloniaApp().StartWithClassicDesktopLifetime(args); // WICHTIG
+        BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
     }
 
     public static AppBuilder BuildAvaloniaApp()

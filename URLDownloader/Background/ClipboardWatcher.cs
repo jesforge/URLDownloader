@@ -30,8 +30,6 @@ public class ClipboardWatcher
             if (!string.IsNullOrWhiteSpace(text) && text != lastClipboardText && IsYoutubeUrl(text))
             {
                 lastClipboardText = text;
-                Console.WriteLine($"Clipboard changed: {text}");
-                Console.WriteLine("Clipboard updated");
 
                 await Avalonia.Threading.Dispatcher.UIThread.InvokeAsync(() =>
                 {
@@ -42,8 +40,7 @@ public class ClipboardWatcher
         }
         catch (Exception ex)
         {
-            // Handle exceptions if needed
-            Console.WriteLine("Error checking clipboard: " + ex);
+            
         }
     }
 

@@ -26,7 +26,6 @@ public partial class App : Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            Console.WriteLine("Closing application");
             desktop.Shutdown();
         }
     }
